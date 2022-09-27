@@ -6,13 +6,13 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "XXX",
-    authDomain: "XXXXXX",
-    projectId: "XXX",
-    storageBucket: "XXXX",
-    messagingSenderId: "XXX",
-    appId: "XXXX",
-    measurementId: "XXX"
+    apiKey: "AIzaSyBD05SZ0JKg6UkFMi2nElsqbnzRP09918E",
+    authDomain: "geekconnect-dev.firebaseapp.com",
+    projectId: "geekconnect-dev",
+    storageBucket: "geekconnect-dev.appspot.com",
+    messagingSenderId: "933914484340",
+    appId: "1:933914484340:web:682b28e29a277364003b21",
+    measurementId: "G-MY8PQ0NR9G"
 };
 
 // Initialize Firebase

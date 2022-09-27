@@ -12,11 +12,11 @@ interface ExpandMoreProps extends IconButtonProps {
 }
 
 
-export default function MessageCard({name}: {name: string}) {
+export default function MessageCard({name, onClick}: {name: string, onClick?:any}) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <Card sx={{ overflow: "initial", mt: 1 }}>
+    <Card sx={{ overflow: "initial", mt: 1 }} onClick={onClick}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

@@ -19,12 +19,12 @@ import { collection, query, getDocs, where } from "firebase/firestore/lite";
 import MessageCard from "components/MessageCard";
 import { Layout } from "components/Layout";
 
-const Home: NextPage = () => {
+const Typescript: NextPage = () => {
   const [languages, setLanguages] = useState<any>(null);
   const getLanguages = async () => {
     const q = query(
       collection(firebaseDb, "tech-languages"),
-      where("id", "==", "js")
+      where("id", "==", "ts")
     );
     const langSnapshot = await getDocs(q);
     const langList = langSnapshot.docs.map((doc) => doc.data());
@@ -134,4 +134,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Typescript;
